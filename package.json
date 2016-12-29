@@ -1,0 +1,27 @@
+{
+  "name": "jsmearm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snikitin-me/iskrajs-mearm.git"
+  },
+  "keywords": [
+    "iskrajs",
+    "mearm"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snikitin-me/iskrajs-mearm/issues"
+  },
+  "homepage": "https://github.com/snikitin-me/iskrajs-mearm#readme",
+  "devDependencies": {
+    "sinon": "^1.17.6",
+    "tape": "^4.6.3"
+  }
+}

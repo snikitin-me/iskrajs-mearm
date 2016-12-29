@@ -4,6 +4,7 @@ var Writer = function(opt) {
     this._codes = [];
     this._isGrabMode = false;
     this._currentIndex = 0;
+    this.LED = opt.LED;
 }
 
 Writer.prototype.isGrabMode = function() {
@@ -34,13 +35,13 @@ Writer.prototype.startGrubMode = function() {
     }
 
     this._isGrabMode = true;
-    LED1.write(this._isGrabMode);
+    this.LED.write(this._isGrabMode);
 };
 
 Writer.prototype.stopGrubMode = function() {
     this._isGrabMode = false;
     this._currentIndex = 0;
-    LED1.write(this._isGrabMode);
+    this.LED.write(this._isGrabMode);
 };
 
 Writer.prototype.toggleGrubMode = function() {
@@ -67,4 +68,4 @@ Writer.prototype.repeat = function() {
     }
 };
 
-exports.MeArmWriter = Writer;
+exports.Writer = Writer;

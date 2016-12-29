@@ -41,7 +41,7 @@ function onInit() {
   servos.hand.goto(hand_off);
 }
 
-var Writer = require("MeArm").MeArmWriter;
+var Writer = require("MeArm").Writer;
 var oWriter = new Writer();
 
 require("IRReceiver").connect(P0, function(code) {
