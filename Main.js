@@ -42,7 +42,7 @@ function onInit() {
 }
 
 var Writer = require("MeArm").Writer;
-var oWriter = new Writer();
+var oWriter = new Writer({ LED: LED });
 
 require("IRReceiver").connect(P0, function(code) {
   if(code == "110100000101000000010100011010111") oWriter.toggleGrubMode();
